@@ -43,13 +43,9 @@
         loop
         playsinline
         preload="auto" >
-        <source src="video/RHabit_Logo.mp4"  type="video/mp4">
+        <source src="Video/RHabit_Logo.mp4"  type="video/mp4">
         Sorry, your browser doesn’t support embedded videos.
-        <a href="videos/RHabit_Logo.mp4">Download the MP4 instead</a>.
-        <!-- Optional captions:
-        <track kind="captions" src="videos/captions.vtt" srclang="en" label="English"> -->
         ffmpeg -i 0001-0240.mp4 -vf "scale=1280:-2" -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 128k 0001-0240-web.mp4
-
       </video>
     </section>
   </main>
@@ -59,4 +55,5 @@
   </footer>
 </body>
 </html>
+
 
