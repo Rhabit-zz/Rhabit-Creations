@@ -46,7 +46,7 @@ main {
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 2 px;
   background: #2b2d42;
   color: #b0b3c3;
   position: fixed;
@@ -75,3 +75,4 @@ footer {
   outline: 2px solid #ef476f;
   outline-offset: 2px;
 }
+
