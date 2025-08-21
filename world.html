@@ -14,25 +14,44 @@
       <a href="index.html">Home</a>
       <a href="design.html">Game Design</a>
       <a href="world.html">Worldbuilding</a>
-      <a href="downloads.html">Downloads</a>
+      <a href="portfolio.html">Portfolio</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
     <h2>The World of Ciretose</h2>
-    <p>Ciretose is a living world shaped by ancient magical forces. Every species has evolved under arcane influence, leading to magical divergence like Shadow, Celestial, and Primal mutations. The setting explores ecological, political, and mythic depth.</p>
+    <p>The world of Ciretose began as the setting for my table top campaigns and over many years turned into an entire source book of information.  It is a living Earth sized world with hundreds of regions shaped by ancient energies and cycles.
+    </p>
+    
+    <p>Every species has evolved under arcane influence, leading to magically enhanced evolutions. The setting explores ecological, political, and mythic depth.</p>
 
-    <ul>
-      <li>Evolutionary bestiary with magical variants</li>
-      <li>Leyline-based arcane geography</li>
-      <li>Historical magical epochs</li>
-      <li>Political intrigue alongside cosmic conflict</li>
-    </ul>
+    <section class="video-wrap">
+      <h2>Ciretose, The Planet</h2>
+
+      <video class="video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto" >
+        <source src="video/Ciretose Revolving.mp4"  type="video/mp4">
+        Sorry, your browser doesn’t support embedded videos.
+        <a href="videos/Ciretose Revolving.mp4">Download the MP4 instead</a>.
+        <!-- Optional captions:
+        <track kind="captions" src="videos/captions.vtt" srclang="en" label="English"> -->
+        ffmpeg -i 0001-0240.mp4 -vf "scale=1280:-2" -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 128k 0001-0240-web.mp4
+
+      </video>
+      <iframe src="documents/Ciretose Lore.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+        width="100%" height="800px" style="border:none;">
+      This browser does not support PDFs. Please download the PDF to view it.
+      </iframe>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 RHabit Lirette. All original content, including the Ciretose RPG system, lore, and worldbuilding, is protected under U.S. copyright law.</p>
+    <p>&copy; 2025 All original content, including the Unbound TTRPG system, Ciretose lore, and worldbuilding, is protected under U.S. copyright law.</p>
   </footer>
 </body>
 </html>
