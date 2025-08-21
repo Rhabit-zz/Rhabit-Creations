@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2b2d42">
   <title>Brandon Lirette | Game Designer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?">
 </head>
 <body>
+    <meta name="theme-color" content="#2b2d42">
   <header>
     <h1>RHabit</h1>
     <p>Game Designer • Worldbuilder • TTRPG Developer</p>
@@ -15,21 +17,46 @@
       <a href="index.html">Home</a>
       <a href="design.html">Game Design</a>
       <a href="world.html">Worldbuilding</a>
-      <a href="downloads.html">Downloads</a>
+      <a href="portfolio.html">Portfolio</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
+    <main>
     <section>
       <h2>Welcome</h2>
-      <p>I'm Brandon Lirette, nickname RHabit, a systems-focused designer with a passion for evolving TTRPGs beyond modern constraints. I specialize in immersive mechanics, tactical combat systems, and world-scale lore rooted in ecosystem logic and magical divergence.</p>
-      <p>Explore my current work on the Ciretose RPG and other creative projects below.</p>
+
+      <p>My name is Brandon Lirette, nickname RHabit (Repetitive Habits).  I design systems and worlds with immersive mechanics, tactical combat systems, and world-scale lore rooted in ecosystem logic and magical divergence.</p>
+
+      <p>My philosophy: <br><br>
+      Game Design: Balance is key.  If the challenge is too low the game is boring.  Too high: frustrating.  Also, don't tell players what to be, instead provide options with a lot of room for expansion, especially for people like myself who are willing to put in a bit of work to create their own vision.  I prefer building blocks over pre-built development paths. 
+      <br><br>
+      World building:  People need something they can relate to in order to be immersive, and diversity is a key pillar.  Worlds evolve around character choices and documenting a world is an extensive process that provides as many options as possible while avoiding railroading. </p>
+
+      <p>Explore my current work on the Unbound TTRPG, the world setting Ciretose, and other creative projects above.</p>
+    </section>
+    
+    <section class="video-wrap">
+      <video class="video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto" >
+        <source src="video/RHabit_Logo.mp4"  type="video/mp4">
+        Sorry, your browser doesn’t support embedded videos.
+        <a href="videos/RHabit_Logo.mp4">Download the MP4 instead</a>.
+        <!-- Optional captions:
+        <track kind="captions" src="videos/captions.vtt" srclang="en" label="English"> -->
+        ffmpeg -i 0001-0240.mp4 -vf "scale=1280:-2" -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 128k 0001-0240-web.mp4
+
+      </video>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Brandon LiretteAll original content, including the Ciretose RPG system, lore, and worldbuilding, is protected under U.S. copyright law.</p>
+    <p>&copy; 2025 All original content, including the Unbound TTRPG system, Ciretose lore, and worldbuilding, is protected under U.S. copyright law.</p>
   </footer>
 </body>
 </html>
+
